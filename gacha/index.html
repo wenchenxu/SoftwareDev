@@ -1,16 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gacha Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .rarity {
+            margin: 10px 0;
+        }
+        .pull-button {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <h1>Gacha Simulator</h1>
-    <strong>Warning!</strong></br>
-    <strong>Danger!</strong></br>
-    <script src="index.js">
-        
-    </script>
+    <div class="row">
+        <div class="rarity" id="rarity1">
+            <h2>Ultra Rare</h2>
+            <input type="text" id="inputRarity1" placeholder="Enter Rarity Percentage">
+            <p>Total Ultra Rares</p>
+            <p id="rarity1Count">0</p>
+        </div>
+        <div class="rarity" id="rarity2">
+            <h2>Rare</h2>
+            <input type="text" id="inputRarity2" placeholder="Enter Rarity Percentage">
+            <p>Total Rares</p>
+            <p id="rarity2Count">0</p>
+        </div>
+        <div class="rarity" id="rarity3">
+            <h2>Common</h2>
+            <input type="text" id="inputRarity3" placeholder="Enter Rarity Percentage">
+            <p>Total Commons</p>
+            <p id="rarity3Count">0</p>
+        </div>
+    </div>
+    <div class="row">
+        <button class="pull-button" id="singlePullButton">1 Pull</button>
+        <button class="pull-button" id="tenPullsButton">10 Pulls</button>
+        <button id="resetButton">Reset</button>
+    </div>
+    <div class="row">
+        <h2>Total Pulls</h2>
+        <p id="totalCount">0</p>
+    </div>
+    <script src="calculator.js"></script>
 </body>
 </html>

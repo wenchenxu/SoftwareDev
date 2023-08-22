@@ -1,0 +1,15 @@
+/* Add this CSS to your existing <style> block */
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-container input {
+    margin-right: 5px;
+}
+
+.input-container::after {
+    content: '%';
+    font-size: 14px;
+    color: #831414;
+}
