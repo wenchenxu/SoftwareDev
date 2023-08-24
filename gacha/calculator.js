@@ -48,7 +48,6 @@ function pullCards(count) {
                 rarityCounts[j]++;
                 break;
             }
-            
         }
     }
     totalCount = totalCount + count
